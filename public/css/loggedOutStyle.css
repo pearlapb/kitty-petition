@@ -1,0 +1,107 @@
+/*================ MAIN ================*/
+
+body {
+    background: url("../img/cat1.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    color: #EB6E80;
+    font-family: Raleway;
+}
+
+#login-logout {
+    position:fixed;
+    top:0px;
+    left: 0px;
+    float: right;
+    width: 100%;
+    height: 11%;
+    background:rgba(0,0,0,0.2);
+    margin: none;
+}
+
+#login-logout > a {
+    overflow: auto;
+    margin: 20px 20px 20px 20px;
+    float: right;
+    font-weight: bold;
+    text-decoration: none;
+    color: #008F95;
+    padding: 10px;
+    border: 1px solid #008F95;
+}
+
+#login-logout > a:hover {
+    border-color: #E9CE7A;
+    color: #E9CE7A;
+}
+
+/*=========SLIDE IN MENU======================*/
+
+#title {
+    color: #EB6E80;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#page {
+    color: #008F95;
+    margin: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/*============== FORMS ==============*/
+
+.form-section {
+    margin-left: 40px;
+    width: 40%;
+}
+
+#the-form {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+#the-form > * {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#the-form > input {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+}
+
+#the-form > input:focus {
+    background-color: #E9CE7A;
+    outline-width: 0;
+}
+
+.error {
+    color: #E24E42;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#the-form > button {
+    font-weight: bold;
+    color: #008F95;
+    padding: 10px;
+    border: 1px solid #008F95;
+    width: 100px;
+    height: 50px;
+    background: none;
+    font-size: 15px;
+}

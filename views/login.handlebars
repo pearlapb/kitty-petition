@@ -1,0 +1,33 @@
+
+<section id="login-form" class="form-section">
+
+    <form id="the-form" method="POST">
+        <h2 id="page">{{page}}</h2>
+
+        {{#if blank}}
+        <p class="error">Not so fast, you need to fill in the form entirely!</p>
+        {{/if}}
+
+        {{#if emailError}}
+        <p class="error">Careful, the email '{{badEmail}}' is either incorrect or you have not registered yet!</p>
+        {{/if}}
+
+        {{#if wrongPw}}
+        <p class="error">Whoops, your password appears to be wrong. Please try again!</p>
+        {{/if}}
+
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+        <label for="email">Email Address</label>
+        <input class="reg" type="email" name="email">
+
+        <label for="pw">Password</label>
+        <input class="reg"  type="password" name="pw">
+
+        <button>Log in</button>
+
+        <!-- <img src="../img/petcat2.gif"/> -->
+
+    </form>
+
+</section>

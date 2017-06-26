@@ -1,0 +1,39 @@
+
+<section id="registration-form" class="form-section">
+
+    <form id="the-form" method="POST">
+        <h2 id="page">{{page}}</h2>
+
+        {{#if error}}
+        <p class="error">Hey there, sorry but you need to fill in the form entirely! </p>
+        {{/if}}
+
+        {{#if emailError}}
+        <p class="error">Hey there, the email '{{badEmail}}' isn't valid, please try again!! </p>
+        {{/if}}
+
+        {{#if usedEmail}}
+        <p class="error">Hey there, it looks like you already have an account with the email '{{badEmail}}' on our website! Login <a href="/login">here</a>! </p>
+        {{/if}}
+
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+        <label for="first">First Name</label>
+        <input class="reg" type="text" name="first">
+
+        <label for="second">Second Name</label>
+        <input class="reg"  type="text" name="second">
+
+        <label for="email">Email Address</label>
+        <input class="reg" type="email" name="email">
+
+        <label for="pw">Password</label>
+        <input class="reg"  type="password" name="pw">
+
+        <button>Sign Up</button>
+
+        <!-- <img src="../img/petcat.gif"/> -->
+
+    </form>
+
+</section>

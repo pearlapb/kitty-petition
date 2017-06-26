@@ -1,0 +1,27 @@
+<h2 id="page">TELL US MORE ABOUT YOURSELF</h2>
+
+<section id="profile-form" class="form-section">
+
+    <form id="the-form" method="POST">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+        <label for="age">Age</label>
+        <input class="profile" type="text" name="age">
+
+        <label for="city">City</label>
+        <input class="profile"  type="text" name="city">
+
+        <label for="homepage">Homepage</label>
+        <input class="profile"  type="text" name="homepage">
+
+        {{#if blank}}
+        <p class="error">Not so fast, you need to fill in the form entirely!</p>
+        {{/if}}
+
+        <button>Update</button>
+
+        <!-- <img src="../img/petcat3.gif"/> -->
+
+    </form>
+
+</section>

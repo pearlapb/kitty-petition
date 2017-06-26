@@ -1,0 +1,333 @@
+/*================ MAIN ================*/
+
+body {
+    background: url("../img/cat5.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    color: #EB6E80;
+    font-family: Raleway;
+    position: relative;
+    background-color: Gainsboro;
+}
+
+span {
+    color: #EB6E80;
+    font-weight: bold;
+}
+
+#mouse-kitty {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000000;
+}
+
+#login-logout {
+    position:fixed;
+    top:0px;
+    left: 0px;
+    float: right;
+    width: 100%;
+    height: 11%;
+    background:rgba(0,0,0,0.4);
+    margin: none;
+}
+
+#login-logout > a {
+    overflow: auto;
+    margin: 20px 20px 20px 20px;
+    float: right;
+    font-weight: bold;
+    text-decoration: none;
+    color: #E9CE7A;
+    padding: 10px;
+    border: 1px solid #E9CE7A;
+}
+
+#login-logout > a:hover {
+    border-color: #008F95;
+    color: #008F95;
+
+}
+
+/*=========SLIDE IN MENU======================*/
+
+#menu {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 20px 20px 20px 20px;
+}
+
+#hamburger {
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 92160;
+    bottom: 100%;
+}
+
+#hamburger.show {
+    bottom: 0px;
+}
+
+#hamburger.show #slide-nav {
+    left: 0px;
+    index: 92160;
+}
+
+#layer {
+    left: 0px;
+    position: absolute;
+    background-color: grey;
+    filter: opacity(0.5);
+    width: 100%;
+    height: 100%;
+}
+
+#layer.show {
+    left: 0;
+}
+
+#slide-nav {
+    position: absolute;
+    right: 100%;
+    height: 100%;
+    min-width: 30%;
+    background-color: white;
+    background-color: #008F95;
+    text-align: center;
+    overflow: hidden;
+    text-align: center;
+    transition-property: right;
+    transition-duration: 3s;
+}
+
+#slide-nav > button {
+    font-weight: bold;
+    text-decoration: none;
+    color: #E9CE7A;
+    border: 1px solid #E9CE7A;
+    float: right;
+    background-color: #008F95;
+}
+
+#slide-nav > h2 {
+    color: #E9CE7A;
+    font-size: 25px;
+}
+
+#slide-nav > a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#slide-nav > a:hover {
+    color: #E9CE7A;
+    font-size: 22px;
+}
+
+#slide-nav > img {
+    width: auto;
+    margin-top: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#title {
+    color: #E9CE7A;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#page {
+    color: #E9CE7A;
+    margin: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/*============== FORMS ==============*/
+
+.form-section {
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid rgba(233, 206, 122, 0.5);
+    background-color: rgba(0,0,0,0.2);
+    width: 500px;
+    height: auto;
+    text-align: center;
+}
+
+#the-form {
+    text-align: center;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+#the-form > * {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#the-form > input {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+}
+
+#the-form > input:focus {
+    background-color: #008F95;
+    outline-width: 0;
+}
+
+.error {
+    color: #E24E42;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#the-form > button {
+    margin: 10px;
+    font-weight: bold;
+    color: #008F95;
+    padding: 10px;
+    border: 1px solid #008F95;
+    width: 100px;
+    height: 50px;
+    background: none;
+    font-size: 15px;
+    display: inline-block;
+    background-color: black;
+    background:rgba(0,0,0,0.5);
+}
+
+/*=============PETITION==================*/
+
+#petition-form {
+    text-align: center;
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+
+#canv {
+    margin-top: 20px;
+    background-color: black;
+    border: 3px solid #008F95;
+    border-radius: 10px;
+    background:rgba(0,0,0,0.5);
+}
+
+#canv:hover {
+    border: 3px solid #EB6E80;
+}
+
+#the-form > #sign {
+    background-color: #008F95;
+    color: #E9CE7A ;
+}
+
+#the-form > #clear {
+    background-color: #E24E42;
+    color: #E9CE7A ;
+}
+
+/*========= THANK YOU PAGE =========*/
+
+#thankstext {
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid rgba(233, 206, 122, 0.5);
+    background-color: rgba(0,0,0,0.5);
+    width: 60%;
+    height: auto;
+    text-align: center;
+}
+
+#thankstext > #sigdiv > #signature {
+    border-radius: 100px;
+}
+
+#thankstext > #text {
+    color: white;
+}
+
+#thankstext > #links > a {
+    font-weight: bold;
+    color: #EB6E80;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#comic {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border: none;
+    width:100%;
+    height: auto;
+    text-align: center;
+    display: block;
+}
+
+#comic > img {
+    margin-top: 100px;
+    width: 500px;
+    height: auto;
+}
+
+#comic > h3 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 400px;
+    color: #E9CE7A;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+/*========= ALL SIGNERS =========*/
+
+#signers {
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid rgba(233, 206, 122, 0.5);
+    background-color: rgba(0,0,0,0.5);
+    width: 40%;
+    height: auto;
+    text-align: center;
+}
+
+ul {
+    padding-right: 40px;
+}
+
+ul li {
+    color: white;
+    list-style-type: none;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    padding: none;
+}
+
+ul li > a {
+    color: #EB6E80;
+    text-decoration: none;
+}

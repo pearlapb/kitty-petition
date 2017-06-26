@@ -1,0 +1,28 @@
+<h2 id="page">SIGN OUR PETITION!</h2>
+
+<section id="petition-form" class="form-section">
+
+
+        <form id="the-form" method="POST">
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+            <input id="hidden-field" type="hidden" name="signUrl">
+            <canvas id="canv" width="400" height="150"></canvas>
+
+            {{#if blank}}
+                <p class="error">Not so fast, you need to fill in the entire form!</p>
+            {{/if}}
+
+            <button id="sign">Sign!</button>
+            <button id="clear" type="button">Clear Sig!</button>
+
+        </form>
+
+        <!-- <img src="../img/kitmittens.gif"/> -->
+    <!--
+    <div id="image-container" class="container">
+        <img id="beerHappy" src="./beergif.gif"/>
+    </div>
+    -->
+
+</section>

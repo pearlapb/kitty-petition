@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+
+    {{#if loggedIn}}
+    <link rel="stylesheet" type="text/css" href="../css/loggedInStyle.css">
+    {{/if}}
+
+    {{#if loggedOut}}
+    <link rel="stylesheet" type="text/css" href="../css/loggedOutStyle.css">
+    {{/if}}
+
+    <title>Petting Zoo Petition.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+</head>
+
+<body>
+
+    {{#if loggedIn}}
+    <section id="hamburger">
+        <div id="layer"></div>
+        <div id="slide-nav" class="nav">
+            <button id="exit">X</button>
+            <h2>Menu</h2>
+            <!-- <a href="/about"><p>About</p></a> -->
+            <a href="/petition"><p>Petition</p></a>
+            <a href="/profile"><p>Your Profile</p></a>
+            <a href="/profile/edit"><p>Edit Your Profile</p></a>
+            <a href="/thankyou"><p>Your Signature</p></a>
+            <a href="/signers"><p>All Signers</p></a>
+            <img src="../img/kitty.gif"/>
+        </div>
+    </section>
+    {{/if}}
+
+    <section id="login-logout" class="nav">
+
+        {{#if loggedOut}}
+        <a href="/login">Log In</a>
+        {{/if}}
+
+        {{#if loggedIn}}
+        <img id="menu" src="../img/menu3.png"/>
+        <a href="/logout">Log out</a>
+        {{/if}}
+
+    </section>
+
+    <section id="main-area">
+        <h1 id="title">For a petting zoo at SPICED Academy</h1>
+
+        {{{body}}}
+
+        {{> footer}}
+    </section>
+
+    {{#if loggedIn}}
+    <img id="mouse-kitty" src="../img/kitty.png">
+    {{/if}}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/script.js" type="text/javascript"></script>
+</body>
+</html>

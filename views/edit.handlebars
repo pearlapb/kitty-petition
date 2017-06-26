@@ -1,0 +1,43 @@
+<h2 id="page">EDIT YOUR PROFILE INFORMATION</h2>
+
+<section id="profile-edit-form" class="form-section">
+
+    <form id="the-form" method="POST">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+        <label for="first">First Name*</label>
+        <input class="reg" type="text" name="first" value="{{rows.first_name}}">
+
+        <label for="second">Second Name*</label>
+        <input class="reg"  type="text" name="second" value="{{rows.last_name}}">
+
+        <label for="email">Email Address*</label>
+        <input class="reg" type="email" name="email" value="{{rows.email_address}}">
+
+        <label for="pw">Password*</label>
+        <input class="reg"  type="password" name="pw">
+
+        <label for="age">Age</label>
+        <input class="profile" type="text" name="age" value="{{rows.age}}">
+
+        <label for="city">City</label>
+        <input class="profile"  type="text" name="city" value="{{rows.city}}">
+
+        <label for="homepage">Homepage</label>
+        <input class="profile"  type="text" name="homepage" value="{{rows.url}}">
+
+        {{#if blank}}
+        <p class="error">Not so fast, you need to fill in the non-optional information entirely!</p>
+        {{/if}}
+
+        {{#if emailError}}
+        <p class="error">Hey there, the email '{{badEmail}}' isn't valid, please try again!! </p>
+        {{/if}}
+
+        <button>Update</button>
+
+        <!-- <img src="../img/petcat3.gif"/> -->
+
+    </form>
+
+</section>
